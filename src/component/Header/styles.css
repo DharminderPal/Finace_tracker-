@@ -1,0 +1,17 @@
+
+
+body{
+  /* font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal; */
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+input{
+    font-family:"Pacifico", cursive ;
+}
+.navbar{
+  background-color: var(--theme);
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
