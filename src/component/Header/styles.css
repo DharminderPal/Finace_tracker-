@@ -1,4 +1,10 @@
-
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
 
 body{
   /* font-family: "Michroma", sans-serif;
@@ -14,4 +20,10 @@ input{
 .navbar{
   background-color: var(--theme);
   box-shadow: 0 4px 8px var(--shadow-color);
+  height: 50px;
+  padding:  20px;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  color: aliceblue;
 }
