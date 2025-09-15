@@ -2,6 +2,7 @@
 
 :root{
   --theme: #51a8f5;
-  /* --theme: #dd1818; */
-  --shadow-color : rgba(277,227,227,0.75)
+  --shadow-color: rgba(0.1, 0.1, 0.1, 0.1);
 }
+
+
