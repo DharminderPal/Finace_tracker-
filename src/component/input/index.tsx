@@ -1,6 +1,7 @@
 import React  from "react";
 import './style.css'
-function input({label,state,setstate,placeholder}){
+
+function input({label , state, setstate, placeholder}){
 return(
 
 <div className="input-wrapper">
@@ -10,6 +11,8 @@ return(
     onChange={(e)=>setstate(e.target.value)}   
     className="input-field"/>
 </div>
+
+
 
 )
 

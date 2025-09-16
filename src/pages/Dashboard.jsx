@@ -4,6 +4,7 @@ const Dashboard = () => {
   return (
     <div>
       <Header />
+      <SingupinComponent />
     </div>
   );
 };

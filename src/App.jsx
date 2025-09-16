@@ -1,6 +1,6 @@
 import react from 'react'
 import Header from './component/Header'
-import Signup from './pages/Signup'
+// import Signup from './pages/Signup'
 import { BrowserRouter,Route,Router,Routes } from 'react-router-dom'
 import Dashboard from './pages/Dashboard'
 import './App.css'
@@ -15,9 +15,9 @@ function App() {
     <ToastContainer/>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Header />} />
+        <Route path="/" element={<SingupinComponent />} />
+        <Route path="/Header" element={<Header />} />
         <Route path="Dashboard" element={<Dashboard />} />
-        <Route path="Signup" element={<SingupinComponent />} />
       </Routes>
     </BrowserRouter>
     </>
