@@ -1,10 +1,12 @@
 import React from "react";
 import './styles.css'
 
-function Button({text,onclick}){
+function Button({text,onclick,blue}){
 return (
 <>
-<div className="btn"        onClick={onclick}>{text}</div>
+<div className={blue?"btn blue":"btn"}        onClick={onclick}>
+    {text}
+    </div>
 </>
 
 
