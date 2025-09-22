@@ -7,6 +7,7 @@ import './App.css'
 import { ToastContainer, toast } from 'react-toastify';
 import SingupinComponent from './component/SignupSignin'
 import firebase from 'firebase/compat/app'
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   // const [count, setCount] = useState(0)
 

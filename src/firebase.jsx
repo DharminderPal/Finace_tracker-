@@ -30,3 +30,5 @@ const provider = new GoogleAuthProvider();
 export {db,auth,provider,doc,setDoc } ;
 
 
+
+

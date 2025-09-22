@@ -1,19 +1,17 @@
 .wrapper{
-    padding: 1rem;
+    padding: 10px;
     box-shadow:   4px 4px 8px 6px var(--shadow-color);
     border-radius: 1rem;
     gap: 1rem;
-    margin-top: 15rem;
-    width: 35rem;
-    margin-left: 45rem;
+    margin-top: 10rem;
+    width: 25rem;
+    margin-left: 50rem;
+    mar
 }
 
 .title{
-font-weight: 500;
+font-weight: 500px;
 font-size: 1rem;
 text-align: center;
 margin: 0;
-
 }
-
-

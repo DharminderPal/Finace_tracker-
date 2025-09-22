@@ -21,7 +21,7 @@ input{
   background-color: var(--theme);
   box-shadow: 0 4px 8px var(--shadow-color);
   height: 50px;
-  padding:  20px;
+  padding:  5px;
   display: flex;
   align-items: center;
   font-size: 25px;

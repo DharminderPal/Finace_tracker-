@@ -4,8 +4,8 @@ const Header = () => {
   return (
 
       <div className="navbar">
-<p style={{fontWeight:500}}>financely.</p>
-{/* <p onClick=logout finction call here>LogOut</p> */}
+<p style={{fontWeight:600}}>financely.</p>
+{/* <p >LogOut</p> */}
       </div>
  
   );
