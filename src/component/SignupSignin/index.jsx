@@ -6,7 +6,8 @@ import Header from "../Header";
 import Button from "../Button"; /*import button here  in this */
 import { toast } from "react-toastify";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from '../../firebase'
+import { auth,db } from '../../firebase'
+// import { auth,db } from '../../firebase'
 import Dashboard from "../../pages/Dashboard";
 import { useNavigate } from 'react-router-dom';
 
@@ -86,12 +87,12 @@ function SingupinComponent() {
 //create the doc 
 
 
-await setDoc(doc(db,"cities","new-city-id"),data)
-
+await setDoc(doc(db,"cities","new-city-id"),{
+  name:user.displayName ? user.displayName:name,
+  email,
+  photoURL:photoURL ?photoURL:"", })
+   createdAt
   }
-
-
-
   return (
     <>
       {loginForm ? (
