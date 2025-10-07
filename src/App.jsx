@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<SingupinComponent />} />
         <Route path="/Header" element={<Header />} />
-        <Route path="Dashboard" element={<Dashboard />} />
+        <Route path="/Dashboard" element={<Dashboard />} />
       </Routes>
     </BrowserRouter>
     </>
