@@ -5,7 +5,9 @@ import Header from "../Header";
 import Button from "../Button";
 import { toast } from "react-toastify";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
-import { db } from '../../firebase';
+import {  signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { provider } from "../../firebase";
+import   { db } from '../../firebase';
 import { doc, setDoc, getDoc } from "firebase/firestore";
 import { useNavigate } from 'react-router-dom';
 
@@ -43,7 +45,37 @@ function SignupSigninComponent() {
 
 //signup with google authentication 
 
+function google_se_sign(){
+  setLoading(true);
+  try{
+const auth = getAuth();
 
+signInWithPopup(auth, provider)
+  .then((result) => {
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    const credential = GoogleAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
+    // The signed-in user info.
+    const user = result.user;
+       navigate('/Dashboard');
+    createUserDocument(user);
+    console.log("google sign in successful :",user );
+    toast.success("user sign in successfully");
+    // IdP data available using getAdditionalUserInfo(result)
+    // ...
+  }).catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    toast.error(error.message);
+    setLoading(false);
+  });
+  }catch(e){
+toast.error(e.message);
+  }
+
+
+}
 
 
 
@@ -132,6 +164,10 @@ function SignupSigninComponent() {
                 Sign Up
               </span>
             </p>
+  <Button  onclick={google_se_sign}   text={loading ? "Loading.." : "Sign Up with Google"} />
+
+
+
           </form>
         </div>
       ) : (
@@ -175,7 +211,7 @@ function SignupSigninComponent() {
                 onclick={signUpWithEmail}
               />
               <p style={{ textAlign: "center" }}>or</p>
-              <Button text={loading ? "Loading.." : "Sign Up with Google"} />
+              <Button  onclick={google_se_sign}   text={loading ? "Loading.." : "Sign Up with Google"} />
               <p style={{ textAlign: "center" }}>
                 Already have an account?{" "}
                 <span
