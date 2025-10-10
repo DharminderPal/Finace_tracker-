@@ -1,14 +1,24 @@
 import React from "react";
 import './styles.css';
-import { Row} from "antd";
+import { Card,Row} from "antd";
+import Button from "../Button";
 function index(){
 return(
 <div>
-<Row>
-<Card title="Card Title "/>
+<Row className="my-row">
+<Card    className="my-card"      title=" Current Balance">
+    <p>₹0</p>
+<Button text= "Reset button"></Button>
+    </Card>
 </Row>
+
+
 </div>
-)
+);
 }
 
 export default index;
+
+
+
+
