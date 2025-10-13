@@ -10,7 +10,19 @@ width: 30%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-    margin: 2rem auto;
     
+    margin: 2rem auto;
+    flex-wrap: wrap;
+    gap: 16px;
+    
+}
+
+
+.my-card p{
+margin: 0;
+}
+
+.ant-card-head{
+margin: 0rem;
+font-weight: 500;
 }

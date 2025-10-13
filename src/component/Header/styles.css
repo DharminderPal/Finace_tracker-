@@ -17,8 +17,10 @@ body{
   font-style: normal;
 }
 input{
-    font-family:"Pacifico", cursive ;
-}
+
+  font-family:"Pacifico", cursive ;
+
+  }
 .navbar{
   background-color: var(--theme);
   box-shadow: 0 4px 8px var(--shadow-color);
@@ -28,6 +30,7 @@ input{
   align-items: center;
   font-size: 25px;
   color: aliceblue;
+
 }
 
 .logo_link{
