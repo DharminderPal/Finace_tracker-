@@ -16,16 +16,17 @@ height: auto ! important;
 .btn:hover{
 
 background-color: var(--theme);
-color: white;
+color: rgb(255, 255, 255);
 transition: all 0.3s ;
 
 }
 .btn-blue{
     background-color: var(--theme);
-    color: white ;
+    color: rgb(255, 255, 255) ;
 }
 .btn-blue:hover{
     background-color: white ;
     color: var(--theme)! important;
     transition: all 0.3s;
 }
+

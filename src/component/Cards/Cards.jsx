@@ -1,55 +1,36 @@
 import React from "react";
 import './styles.css';
-import { Card,Row} from "antd";
+import { Card, Row } from "antd";
 import Button from "../Button";
-function index(){
-return(
-<div>
-
-{/* 
-<Row className="my-row">
-
-<Card    className="my-card"      title=" Current Balance">
-    <p>₹0</p>
-<Button text= "Reset button" blue={true}></Button>
-    </Card>
-<Card    className="my-card"      title=" Current Balance">
-    <p>₹0</p>
-<Button text= "Reset button" blue={true}></Button>
-    </Card>
-<Card  className="my-card"      title=" Current Balance">
-    <p>₹0</p>
-<Button text= "Reset button" blue={true}></Button>    
-    </Card>
-</Row> */}
-<Row className="my-row">
-    <Card bordered={true} style={cardstyle} >
-        <h2>CurrentBalance</h2>
-        <p>₹{currentBalance}</p>
-       <div></div>
-
-    </Card>
+function index({ showExpenseModel, showIncomeModel })  {
 
 
 
-
-</Row>
-
-
+    return (
+        <div>
 
 
+            <Row className="my-row">
+                <Card variant={true} className="my-card"   >
+                    <h2>CurrentBalance</h2>
+                    <p>₹0</p>
+                    <Button text="Reset Balance" blue={true}></Button>
+                </Card>
 
+                <Card variant={true} className="my-card" >
+                    <h2>Total Income</h2>   
+                    <p>₹0</p>
+                    <Button text="Add Income" blue={true} onclick={showIncomeModel}></Button>
+                </Card>
 
-
-
-
-
-
-
-
-
-</div>
-);
+                <Card variant={true} className="my-card" >
+                    <h2>Total Expenses</h2>
+                    <p>₹0</p>
+                    <Button text="Add Expense" blue={true}  onclick={showExpenseModel} ></Button>
+                </Card>
+            </Row>
+        </div>
+    );
 }
 
 export default index;

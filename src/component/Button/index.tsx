@@ -4,7 +4,7 @@ import './styles.css'
 function Button({text,onclick,blue,disabled}){
 return (
 <>
-<div className={blue?"btn blue":"btn"} onClick={onclick}>
+<div className={blue?"btn blue":"btn"}   onClick={onclick}>
     {text}
     </div>
 </>
