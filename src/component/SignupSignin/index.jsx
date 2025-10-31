@@ -135,7 +135,7 @@ toast.error(e.message);
           <h2 className="title">
             Login to <span style={{ color: `var(--theme)` }}>Financely</span>
           </h2>
-          <form onSubmit={loginWithEmail}>
+          <form method="Post" onSubmit={loginWithEmail}>
             <Input
               type="email"
               label="Email"
@@ -177,7 +177,7 @@ toast.error(e.message);
             <h2 className="title">
               Sign Up On <span style={{ color: `var(--theme)` }}>Financely</span>
             </h2>
-            <form onSubmit={signUpWithEmail}>
+            <form method="Post"  onSubmit={signUpWithEmail}>
               <Input
                 label="Enter Your Name"
                 state={name}
