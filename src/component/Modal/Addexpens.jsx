@@ -27,15 +27,15 @@ form={form}
 layout="vertical"
 onFinish={(values)=>{
 onFinish(values,'expense');
-form.resetFields();
+// form.resetFields();
 }}
 >
 {/* 10/17/2025 */}
 
 <Form.Item
-label="Title"
-name="title"
-rules={[{ required: true, message: 'Please enter a title' }]}
+label="Name"
+name="name"
+rules={[{ required: true, message: 'Please enter a name' }]}
 >
 
 <Input placeholder="Enter expense title" />
@@ -59,7 +59,7 @@ rules={[{ required: true,
 </Form.Item>
 <Form.Item
 label="Category"
-name="category"
+name="tag"
 rules={[{ required: true, message: 'Please select a category' }]}
 
 >
@@ -74,7 +74,7 @@ rules={[{ required: true, message: 'Please select a category' }]}
 Add Expense
 </Button>
 </Form.Item>
-</Form>
+</Form> 
 </Modal>
 )
 }
